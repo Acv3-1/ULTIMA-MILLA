@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo de Pedido</title>
+    <link rel="stylesheet" href="../static/css/rastreo.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Rastreo de Pedidos</h1>
+    </header>
+
+    <main>
+        <section class="rastreo">
+            <h2>Rastrea tu pedido</h2>
+            <label for="numeroGuia">Número de guía:</label>
+            <input type="text" id="numeroGuia" placeholder="Ej: 12345">
+            <button id="buscarBtn">Buscar</button>
+        </section>
+
+        <section class="informacion">
+            <h2>Información del Pedido</h2>
+            <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+            <p><strong>Producto:</strong> <span id="producto"></span></p>
+            <p><strong>Destino:</strong> <span id="destino"></span></p>
+            <p><strong>Conductor:</strong> <span id="conductor"></span></p>
+        </section>
+
+        <section class="mapa">
+            <h2>Ubicación Actual</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCImKJEKTINJKT5OdD2j3vgzonq3HxbA4" async defer></script>
+    <script src="rastreo.js"></script>
+</body>
+</html>
